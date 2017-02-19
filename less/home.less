@@ -1,0 +1,264 @@
+/*=
+	Home
+*/
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+.section{
+	width: 100%;
+	height: 100%;
+	.before;
+}
+
+/*=Projects
+ ---------------------------------------------------------------------------*/
+.section-projets{
+	width: 100%;
+	position: relative;
+}
+
+.section-projets__header{
+	width: 100%;
+	position: relative;
+	background-color: @color--primary-dark;
+	padding-top: 25px;
+	text-align: center;
+
+	h2{
+		.title;
+		color: white;
+		font-size: 38px;
+	}
+	p{
+		.text;
+		color: white;
+		font-size: @size--text-big;
+	}
+	.nav-tabs{
+		margin-top: 25px;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		li{
+			a{
+				.text;
+				color: white;
+				font-size: @size--text;
+				text-transform: uppercase;
+				border:0;
+				.border-radius(0px);
+				.transition(0.3s);
+				i{
+					margin-right: 5px;
+				}
+				&:hover{
+					color: white;
+					background-color: @color--primary;
+					border:0;
+					.transition(0.3s);
+				}
+			}
+		}
+		li.active{
+			a{
+				color: @color--text;
+				.transition(0.3s);
+				&:hover{
+					color: white;
+					background-color: @color--primary;
+					border:0;
+					.transition(0.3s);
+				}
+			}
+		}
+	}
+}
+
+#carousel{
+	width: 100%;
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	.item{
+		width: 380px;
+	}
+	.item__image{
+		width: 100%;
+		height: 200px;
+		position: relative;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	.item__text{
+		width: 100%;
+		position: relative;
+		padding: 10px;
+		border: 1px solid #EAEAEA;
+		text-align: center;
+		h4{
+			.title;
+			color: @color--primary;
+			font-size: @size--text-big;
+			text-transform: uppercase;
+		}
+		p{
+			.text;
+			color: @color--text;
+			font-size: @size--text;
+		}
+	}
+	.owl-dots{
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 100%;
+		padding: 10px;
+		.center-align;
+		.centered;
+		.after;
+
+		.owl-dot{
+			width: 10px;
+			height: 10px;
+			background-color: #EAEAEA;
+			margin-right: 8px;
+			.border-radius(50%);
+		}
+		.owl-dot.active{
+				background-color: @color--primary;
+		}
+	}
+}
+
+/*=About
+ ---------------------------------------------------------------------------*/
+.section-about{
+	width: 100%;
+	position: relative;
+	border-top: 8px solid @color--primary;
+}
+
+.section-about__item{
+	width: 100%;
+	position: relative;
+	padding-top: 25px;
+	padding-bottom: 25px;
+
+	h4{
+		.title;
+		color: @color--primary-dark;
+		font-size: @size--text-big;
+		text-transform: uppercase;
+		span{
+			font-size: @size--text;
+			text-transform: none;
+		}
+		img{
+			width: 60px;
+			height: 60px;
+			margin-right: 10px;
+		}
+	}
+	p{
+		.text;
+		color: @color--text;
+		font-size: @size--text;
+		padding-left: 60px;
+	}
+}
+
+
+
+/*=Contact
+---------------------------------------------------------------------------*/
+.section-contact{
+	width: 100%;
+	height: 700px;
+	max-height: 700px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	.before;
+}
+
+.banner{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-image: url(../images/contact.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	.middle;
+}
+
+.section-contact__container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	.center-align;
+	.after;
+
+	h2{
+		.title;
+		color: @color--primary;
+		font-size: 38px;
+	}
+	p{
+		.text;
+		color: @color--text;
+		font-size: @size--text-big;
+		margin: 25px 0 25px 0;
+	}
+	form{
+		input[type=text],
+		input[type=email],
+		input[type=tel]{
+			.text;
+			color: @color--text;
+			font-size: @size--text;
+			height: 43px;
+			.border-radius(0px);
+		}
+		.bootstrap-select>.dropdown-toggle{
+			height: 43px;
+		}
+		.bs-caret{
+			color: @color--primary;
+		}
+		textarea{
+			.text;
+			color: @color--text;
+			font-size: @size--text;
+			.border-radius(0px);
+		}
+		button.btn-primary{
+			.title;
+			color: white;
+			font-size: 18px;
+			text-transform: uppercase;
+			background-color: @color--primary;
+			width: 100%;
+			.transition(0.3s);
+			.border-radius(0px);
+			&:hover{
+				color: white;
+				background-color: @color--primary-dark;
+				.transition(0.3s);
+			}
+		}
+	}
+}
+

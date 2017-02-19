@@ -1,0 +1,79 @@
+/*=
+	Toolbox
+*/
+
+/* =Modifers
+-----------------------------------------------------------------------------*/
+.bg-accent-light{
+	background-color: @color--accent-light;
+}
+
+.end{
+	padding: 0;
+}
+
+.end--left{
+	padding-left: 0;
+}
+
+.end--right{
+	padding-right: 0;
+}
+
+/* =Center
+-----------------------------------------------------------------------------*/
+.center-align{
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+/* =Transition
+-----------------------------------------------------------------------------*/
+.transition(@time){
+	-webkit-transition: all  @time ease-in-out;
+	-moz-transition: all  @time ease-in-out;
+	-ms-transition: all  @time ease-in-out;
+	-o-transition: all  @time ease-in-out;
+	transition: all  @time ease-in-out;
+}
+
+/* =Borders
+-----------------------------------------------------------------------------*/
+.border-radius(@num){
+	-webkit-border-radius:	@num;
+	-moz-border-radius:		@num;
+	border-radius:				@num;
+}
+
+/* =Z-index
+-----------------------------------------------------------------------------*/
+.before{
+	z-index: 5;
+}
+
+.middle{
+	z-index: 10;
+}
+
+.after{
+	z-index: 20;
+}
+
+/* =Center
+-----------------------------------------------------------------------------*/
+.centered{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+}
